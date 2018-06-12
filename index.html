@@ -5,9 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chefs Table</title>
     <!-- link google fonts here -->
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <!-- link all the css here -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
@@ -32,7 +29,9 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">
                     <h1 class="text-center">Chefs Table</h1>
@@ -53,7 +52,7 @@
 
     <section id="about-section">
         <div class="container">
-            <div class="row flex-row">
+            <div class="row">
                 <div class="col-md-4 col-md-offset-1">
                     <h2>A unique culinary experience.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -75,20 +74,19 @@
                     <div>
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs menu-tab text-center" role="tablist">
-                            <li role="presentation" class="active col-sm-3 text-center"><a href="#menu-appetizers" aria-controls="menu-appetizers" role="tab" data-toggle="tab"><img src="img/appetizers.jpg" alt="" class="img-responsive"><h3>Appetizers</h3></a></li>
-                            <li role="presentation" class="col-sm-3 text-center"><a href="#menu-entrees" aria-controls="menu-entrees" role="tab" data-toggle="tab"><img src="img/entrees.jpg" alt="" class="img-responsive"><h3>Entrees</h3></a></li>
-                            <li role="presentation" class="col-sm-3 text-center"><a href="#menu-desserts" aria-controls="menu-desserts" role="tab" data-toggle="tab"><img src="img/desserts.jpg" alt="" class="img-responsive"><h3>Desserts</h3></a></li>
-                            <li role="presentation" class="col-sm-3 text-center"><a href="#menu-cocktails" aria-controls="menu-cocktails" role="tab" data-toggle="tab"><img src="img/cocktails.jpg" alt="" class="img-responsive"><h3>Cocktails</h3></a></li>
+                            <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="menu-appetizers" role="tab" data-toggle="tab"><h3>Appetizers</h3></a></li>
+                            <li role="presentation"><a href="#menu-entrees" aria-controls="menu-entrees" role="tab" data-toggle="tab"><h3>Entrees</h3></a></li>
+                            <li role="presentation"><a href="#menu-desserts" aria-controls="menu-desserts" role="tab" data-toggle="tab"><h3>Desserts</h3></a></li>
+                            <li role="presentation"><a href="#menu-cocktails" aria-controls="menu-cocktails" role="tab" data-toggle="tab"><h3>Cocktails</h3></a></li>
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active fade in menu-page" id="menu-appetizers">
+                            <div role="tabpanel" class="tab-pane active fade in" id="menu-appetizers">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
                                             <li>
-                                                <img src="img/appetizers.jpg" alt="" class="img-responsive center-block menu-inside-img">
                                                 <h4><u>Spring Salad</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
@@ -96,10 +94,6 @@
                                                 <h4><u>Truffle Fries</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul>
                                             <li>
                                                 <h4><u>Baked Brussel Sprouts</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -110,15 +104,17 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <img src="img/appetizers.jpg" alt="" class="img-responsive center-block menu-inside-img">
+                                    </div>
                                 </div><!-- /.row -->
                             </div><!-- /#menu-appetizers -->
 
-                            <div role="tabpanel" class="tab-pane fade menu-page" id="menu-entrees">
+                            <div role="tabpanel" class="tab-pane fade" id="menu-entrees">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
                                             <li>
-                                                <img src="img/entrees.jpg" alt="" class="img-responsive center-block menu-inside-img">
                                                 <h4><u>Spaghetti & Meatballs</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
@@ -126,10 +122,6 @@
                                                 <h4><u>Grilled Alaskan Salmon</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul>
                                             <li>
                                                 <h4><u>Filet Mignon</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -140,15 +132,17 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <img src="img/entrees.jpg" alt="" class="img-responsive center-block menu-inside-img">
+                                    </div>
                                 </div> <!-- /.row -->
                             </div><!-- /#menu-entrees -->
 
-                            <div role="tabpanel" class="tab-pane fade menu-page" id="menu-desserts">
+                            <div role="tabpanel" class="tab-pane fade" id="menu-desserts">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
                                             <li>
-                                                <img src="img/desserts.jpg" alt="" class="img-responsive center-block menu-inside-img">
                                                 <h4><u>Chocolate Lava Cake</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
@@ -156,10 +150,6 @@
                                                 <h4><u>Strawberry Cheesecake</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul>
                                             <li>
                                                 <h4><u>Creme Brulee</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -170,15 +160,17 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="col-sm-6">
+                                        <img src="img/desserts.jpg" alt="" class="img-responsive center-block menu-inside-img">
+                                    </div>
                                 </div>
                             </div><!-- /#menu-desserts -->
 
-                            <div role="tabpanel" class="tab-pane fade menu-page" id="menu-cocktails">
+                            <div role="tabpanel" class="tab-pane fade" id="menu-cocktails">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
                                             <li>
-                                                <img src="img/cocktails.jpg" alt="" class="img-responsive center-block menu-inside-img">
                                                 <h4><u>Lemon Drop</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
@@ -186,10 +178,6 @@
                                                 <h4><u>Mai Tai</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul>
                                             <li>
                                                 <h4><u>Gin & Tonic</u></h4>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -199,6 +187,9 @@
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             </li>
                                         </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img src="img/cocktails.jpg" alt="" class="img-responsive center-block menu-inside-img">
                                     </div>
                                 </div><!-- /.row -->
                             </div><!-- /#menu-cocktails -->
